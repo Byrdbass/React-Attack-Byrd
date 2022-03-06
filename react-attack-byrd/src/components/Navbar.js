@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/materialize.css';
 import '../styles/style.css';
-// import '../styles/materialize.js;'
+import '../utils/materialize.js'
+import M from 'materialize-css'
 
 function Navbar() {
     return (

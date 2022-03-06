@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/materialize.css';
 import '../styles/style.css'
+import M from 'materialize-css'
 
 function Banner() {
     return (
