@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/materialize.css';
 import '../styles/style.css';
 import '../utils/materialize.js'
-import M from 'materialize-css'
+// import '../utils/resume.js'
+
 
 function Navbar() {
     return (
@@ -11,7 +12,7 @@ function Navbar() {
 
             <nav class="nav-extended">
                 <div class="nav-wrapper customColorNav">
-                    <a href="index.html" class="brand-logo"><img src="./images/Artboard-1-copy-17color-36.png"
+                    <a href="index.html" class="brand-logo"><img src="https://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
                         class="customColorNav logo" /></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger customColorNav">
                         <i class="material-icons customColorNav">menu</i></a>

@@ -6,7 +6,7 @@ import M from 'materialize-css'
 function Banner() {
     return (
         <div>
-            <section class="banner" alt="a view of a copper colored canyon with blue sky">
+            <section class="banner" alt="A panaroma of a string orchestra">
                 <header class="container">Leland Byrd's Coding Portfolio</header>
             </section>
         </div>
