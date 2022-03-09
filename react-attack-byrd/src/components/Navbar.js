@@ -2,7 +2,7 @@ import React from 'react';
 import FileSaver from 'file-saver';
 
 
-function Navbar() {
+function Navbar({ currentPage, handlePageChange }) {
     const saveResume = () => {
         FileSaver.saveAs("../../public/LelandByrdResume030422.pdf", "leland-byrd-resume.pdf");
     };
@@ -12,10 +12,18 @@ function Navbar() {
 
             <nav className="nav-extended">
                 <div className="nav-wrapper customColorNav">
-                    <a href="index.html" className="brand-logo"><img src="https://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
-                        className="customColorNav logo" /></a>
-                    <a href="#" data-target="mobile-demo" className="sidenav-trigger customColorNav">
-                        <i className="material-icons customColorNav">menu</i></a>
+                    <a
+                        href="#Aboutme" onClick={() => handlePageChange('Aboutme')} className={currentPage === 'Aboutme'}
+                    >
+                        <img src="https://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
+                            className="customColorNav logo" />
+                    </a>
+                    <a
+                        // HAMBURGER ICON NOT WORKING IN MOBILE VIEW!!
+                        href="#" data-target="mobile-demo" className="sidenav-trigger customColorNav"
+                    >
+                        <i className="material-icons customColorNav">menu</i>
+                    </a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><a className="customColorNav" href="https://github.com/Byrdbass" target="_blank">Github</a></li>
                         <li><a className="customColorNav" href="https://www.linkedin.com/in/leland-byrd/" target="_blank">LinkedIn</a></li>
@@ -24,10 +32,14 @@ function Navbar() {
                 </div>
                 <div className="nav-content customColorNav">
                     <ul className="tabs tabs-transparent">
+                        <li className='tab customColorNav'>
+                            <a href="#ProjectCards" onClick={()=>handlePageChange('ProjectCards')} className={currentPage === 'ProjectCards'}>Portfolio</a>
+                            </li>
                         <li className="tab customColorNav"><a href="./assets/Poke-Weather/index.html" target="_blank">PokeWeather</a></li>
                         {/* <!-- <li className="tab"><a className="active" href="#test2">Repair Revolution</a></li> --> */}
                         <li className="tab customColorNav"><a href="https://byrdbass.github.io/passwordGenerator/" target="_blank">Password
                             Generator</a></li>
+                        {/* need to move the onClick event to the Resume component along with it's function saveResume and it's import from file-saver */}
                         <li className="tab customColorNav"><a className="resumeBtn" onClick={saveResume} target="_blank">Resume</a></li>
                     </ul>
                 </div>

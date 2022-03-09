@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
-import Aboutme from "./components/Aboutme";
-import ProjectCards from "./components/ProjectCards";
+import Aboutme from "./components/pages/Aboutme";
+import ProjectCards from "./components/pages/ProjectCards";
 import './styles/materialize.css';
 import './styles/style.css';
 import 'materialize-css/dist/css/materialize.min.css'
@@ -24,10 +24,13 @@ function App() {
         //     return <Resume />
         // }
     }
+
+    const handlePageChange = (page) =>setCurrentPage(page)
+
     return (
         <div>
             <Banner />
-            <Navbar />
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
             {renderPage()}
             {/* create a footer */}
 
