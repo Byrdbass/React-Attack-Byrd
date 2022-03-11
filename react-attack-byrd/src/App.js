@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Aboutme from "./components/pages/Aboutme";
-import ProjectCards from "./components/pages/ProjectCards";
+import Portfolio from "./components/pages/Portfolio";
+import Resume from "./components/pages/Resume";
 import './styles/materialize.css';
 import './styles/style.css';
 import 'materialize-css/dist/css/materialize.min.css'
@@ -17,12 +18,12 @@ function App() {
         if (currentPage === 'Aboutme') {
             return <Aboutme />;
         }
-        if (currentPage === 'ProjectCards') {
-            return <ProjectCards />
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />
         }
-        // if (currentPage === 'Resume') {
-        //     return <Resume />
-        // }
+        if (currentPage === 'Resume') {
+            return <Resume />
+        }
     }
 
     const handlePageChange = (page) =>setCurrentPage(page)

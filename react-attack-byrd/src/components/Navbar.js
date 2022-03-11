@@ -1,11 +1,10 @@
 import React from 'react';
 import FileSaver from 'file-saver';
+import M from 'materialize-css'
 
 
 function Navbar({ currentPage, handlePageChange }) {
-    const saveResume = () => {
-        FileSaver.saveAs("../../public/LelandByrdResume030422.pdf", "leland-byrd-resume.pdf");
-    };
+
     return (
         <div>
             <div className="divider"></div>
@@ -33,14 +32,14 @@ function Navbar({ currentPage, handlePageChange }) {
                 <div className="nav-content customColorNav">
                     <ul className="tabs tabs-transparent">
                         <li className='tab customColorNav'>
-                            <a href="#ProjectCards" onClick={()=>handlePageChange('ProjectCards')} className={currentPage === 'ProjectCards'}>Portfolio</a>
+                            <a href="#Portfolio" onClick={()=>handlePageChange('Portfolio')} className={currentPage === 'Portfolio'}>Portfolio</a>
                             </li>
+                                  {/* need to move the onClick event to the Resume component along with it's function saveResume and it's import from file-saver */}
+                        <li className="tab customColorNav"><a href="#Resume" onClick={()=>handlePageChange('Resume')} className={currentPage === 'Resume'}>Resume</a></li>
                         <li className="tab customColorNav"><a href="./assets/Poke-Weather/index.html" target="_blank">PokeWeather</a></li>
                         {/* <!-- <li className="tab"><a className="active" href="#test2">Repair Revolution</a></li> --> */}
                         <li className="tab customColorNav"><a href="https://byrdbass.github.io/passwordGenerator/" target="_blank">Password
                             Generator</a></li>
-                        {/* need to move the onClick event to the Resume component along with it's function saveResume and it's import from file-saver */}
-                        <li className="tab customColorNav"><a className="resumeBtn" onClick={saveResume} target="_blank">Resume</a></li>
                     </ul>
                 </div>
             </nav>
