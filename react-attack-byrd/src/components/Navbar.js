@@ -32,10 +32,21 @@ function Navbar({ currentPage, handlePageChange }) {
                 <div className="nav-content customColorNav">
                     <ul className="tabs tabs-transparent">
                         <li className='tab customColorNav'>
-                            <a href="#Portfolio" onClick={()=>handlePageChange('Portfolio')} className={currentPage === 'Portfolio'}>Portfolio</a>
-                            </li>
-                                  {/* need to move the onClick event to the Resume component along with it's function saveResume and it's import from file-saver */}
-                        <li className="tab customColorNav"><a href="#Resume" onClick={()=>handlePageChange('Resume')} className={currentPage === 'Resume'}>Resume</a></li>
+                            <a href="#Portfolio" onClick={() => handlePageChange('Portfolio')}
+                                className={currentPage === 'Portfolio'}>Portfolio
+                            </a>
+                        </li>
+                        {/* need to move the onClick event to the Resume component along with it's function saveResume and it's import from file-saver */}
+                        <li className="tab customColorNav">
+                            <a href="#Resume" onClick={() => handlePageChange('Resume')}
+                                className={currentPage === 'Resume'}>Resume
+                            </a>
+                        </li>
+                        <li className="tab customColorNav">
+                            <a href="#ContactForm" onClick={() => handlePageChange('ContactForm')}
+                                className={currentPage === 'ContactForm'}>Contact
+                            </a>
+                        </li>
                         <li className="tab customColorNav"><a href="./assets/Poke-Weather/index.html" target="_blank">PokeWeather</a></li>
                         {/* <!-- <li className="tab"><a className="active" href="#test2">Repair Revolution</a></li> --> */}
                         <li className="tab customColorNav"><a href="https://byrdbass.github.io/passwordGenerator/" target="_blank">Password

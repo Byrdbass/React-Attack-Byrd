@@ -8,6 +8,8 @@ import './styles/materialize.css';
 import './styles/style.css';
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
+import Footer from "./components/Footer";
+import ContactForm from "./components/pages/ContactForm";
 
 function App() {
     const [currentPage, setCurrentPage] = useState('Aboutme')
@@ -23,17 +25,21 @@ function App() {
         }
         if (currentPage === 'Resume') {
             return <Resume />
+        } 
+        if (currentPage === 'ContactForm') {
+            return <ContactForm />
         }
     }
 
-    const handlePageChange = (page) =>setCurrentPage(page)
+    const handlePageChange = (page) => setCurrentPage(page)
 
     return (
         <div>
             <Banner />
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             {/* create a footer */}
+            <Footer />
 
 
 
