@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-attack-byrd/static/css/main.50f22d98.css",
+    "main.js": "/react-attack-byrd/static/js/main.49c09401.js",
+    "static/media/Scoggins_highSchool_visit1_panorama_cropped1.jpeg": "/react-attack-byrd/static/media/Scoggins_highSchool_visit1_panorama_cropped1.6a20048a7996b61d6e11.jpeg",
+    "index.html": "/react-attack-byrd/index.html",
+    "main.50f22d98.css.map": "/react-attack-byrd/static/css/main.50f22d98.css.map",
+    "main.49c09401.js.map": "/react-attack-byrd/static/js/main.49c09401.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50f22d98.css",
+    "static/js/main.49c09401.js"
+  ]
+}
