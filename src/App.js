@@ -38,7 +38,6 @@ function App() {
             <Banner />
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
-            {/* create a footer */}
             <Footer />
 
 

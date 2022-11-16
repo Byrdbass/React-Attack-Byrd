@@ -2,13 +2,15 @@ import React from 'react';
 import Cards from '../Cards'
 // DOUBLE CHECK IF THIS IS COPIED CORRECTLY FROM WORKSPACE FOR LELAND BYRD.COM
 
+/* TODO:
+ADD A SSL certificate and change all links with LelandByrd.com to https: from http:*/
 
 function Portfolio() {
     const portfolioArray = [
         //POKE-WEATHER
         {
-            deployedLink: "https://lelandbyrd.com/assets/Poke-Weather/index.html",
-            cardImage: "https://lelandbyrd.com/images/PokeWeather.gif",
+            deployedLink: "http://lelandbyrd.com/assets/Poke-Weather/index.html",
+            cardImage: "http://lelandbyrd.com/images/PokeWeather.gif",
             cardAltText: "screenshot of poke-weather app",
             title: "Poke Weather",
             content: "A weather API with pokemon based off of weather conditions",
@@ -17,7 +19,7 @@ function Portfolio() {
         //BLOG BONANZA
         {
             deployedLink: "https://blog-bonanza.herokuapp.com",
-            cardImage: "https://lelandbyrd.com/images/Blog-Bonanza.gif",
+            cardImage: "http://lelandbyrd.com/images/Blog-Bonanza.gif",
             cardAltText: "screenshot of Blog-Bonanza app",
             title: "Blog Bonanza",
             content: "A full stack tech blog!",
@@ -69,16 +71,14 @@ function Portfolio() {
             <body>
                 <div className='container'>
                     {/* called attributes aka props */}
-                    {
-                    portfolioArray.map((project, i) => 
+                    {portfolioArray.map((project, i) => 
                     <Cards key={i}
                     deployedLink={project.deployedLink} 
                     cardImage={project.cardImage}
                     cardAltText={project.cardAltText}
                     title={project.title}
                     content={project.content}
-                    gitHubRepo={project.gitHubRepo}
-                    />)}
+                    gitHubRepo={project.gitHubRepo} />)}
                 </div>
             </body>
         </div>

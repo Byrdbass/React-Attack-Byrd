@@ -10,7 +10,7 @@ function Cards(props) {
             <div className="col s12 m5 l4">
                 <a href= {props.deployedLink} target="_blank">
                     <div className="card cardlink">
-                        <div className="card-image">
+                        <div className="card-image custom-card-image">
                             <img src={props.cardImage} alt={props.cardAltText} />
                             <span className="card-title transparent">{props.title}</span>
                         </div>
