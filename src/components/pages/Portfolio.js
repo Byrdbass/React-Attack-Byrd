@@ -29,7 +29,7 @@ function Portfolio() {
         //CREATE DELETE FUNCTIONALITY!!!
         {
             deployedLink: "https://write-some-notes.herokuapp.com/",
-            cardImage: "https://lelandbyrd.com/images/Note%20Taker.gif",
+            cardImage: "http://lelandbyrd.com/images/Note%20Taker.gif",
             cardAltText: "screenshot of Note Taker app",
             title: "Write Some Notes",
             content: "A simple note taking app",
@@ -39,7 +39,7 @@ function Portfolio() {
         // TEAM-PROFILE GEN
         {
             deployedLink: 'https://github.com/Byrdbass/Team-Profile-Generator',
-            cardImage: 'https://lelandbyrd.com/images/team-profile-generator-gif.gif',
+            cardImage: 'http://lelandbyrd.com/images/team-profile-generator-gif.gif',
             cardAltText: 'screenshot of Team profile Generator app',
             title: 'Team Profile Generator',
             content: 'A node app to create an Employee Database',
@@ -49,7 +49,7 @@ function Portfolio() {
         // README-GEN
         {
             deployedLink: 'https://github.com/Byrdbass/MarkDown-MUHsheeen',
-            cardImage: 'https://lelandbyrd.com/images/README-generator-gif.gif',
+            cardImage: 'http://lelandbyrd.com/images/README-generator-gif.gif',
             cardAltText: 'screenshot of a readme generator',
             title: 'MarkDown MUHsheeen',
             content: 'A markdown file generator for easy GitHub deployment',
@@ -59,7 +59,7 @@ function Portfolio() {
         //Weather dashboard
         {
             deployedLink: 'https://byrdbass.github.io/weather-dashboard/',
-            cardImage: 'https://lelandbyrd.com/images/Weather-Dashboard-ScreenShot.gif',
+            cardImage: 'http://lelandbyrd.com/images/Weather-Dashboard-ScreenShot.gif',
             cardAltText: 'screenshot of Weather app',
             title: 'Weather Dashboard',
             content: 'A 5 day weather forecast based off location',
