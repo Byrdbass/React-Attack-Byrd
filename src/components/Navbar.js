@@ -14,7 +14,8 @@ function Navbar({ currentPage, handlePageChange }) {
                     <a
                         href="#Aboutme" onClick={() => handlePageChange('Aboutme')} className={currentPage === 'Aboutme'}
                     >
-                        <img src="https://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
+                        {/*CHANGE TO HTTPS WHEN SSL CERT IS THERE! */}
+                        <img src="http://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
                             className="customColorNav logo" />
                     </a>
                     <a

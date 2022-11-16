@@ -67,12 +67,12 @@ function Portfolio() {
         }
     ]
     return (
-        <div>
-            <body>
-                <div className='container'>
+        <div className='container'>
+            <body className=''>
+                <div className=''>
                     {/* called attributes aka props */}
                     {portfolioArray.map((project, i) => 
-                    <Cards key={i}
+                    <Cards className=""key={i}
                     deployedLink={project.deployedLink} 
                     cardImage={project.cardImage}
                     cardAltText={project.cardAltText}

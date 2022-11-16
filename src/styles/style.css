@@ -215,6 +215,9 @@
     .custom-card-image{
         width: 20em;
     }
+    .custom-card{
+        width: 20em;
+    }
     .cardlink {
         /* transition: flex-basis 500ms linear; */
         /* width: 17em; */
