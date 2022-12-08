@@ -2,7 +2,7 @@
   "name": "react-attack-byrd",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lelandbyrd.com",
+  "homepage": "https://byrdbass.github.io/react-attack-byrd",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
