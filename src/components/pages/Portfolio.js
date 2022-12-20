@@ -66,34 +66,35 @@ function Portfolio() {
             gitHubRepo: 'https://github.com/Byrdbass/weather-dashboard'
         }
     ]
-    // const containerRef = useRef(null);
-    // const [isVisible, setIsVisible] = useState(false);
+    const containerRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(true);
 
-    // const callbackFunction = entries => {
-    //     const [ entry ] = entries
-    //     setIsVisible(entry.isIntersecting)
-    // }
-    // const options = {
-    //     root: null,
-    //     rootMargin: "50px",
-    //     threshold: 1.0
-    // }
+    const callbackFunction = entries => {
+        const [ entry ] = entries
+        setIsVisible(entry.isIntersecting)
+    }
+    const options = {
+        root: document.querySelector("scrollArea"),
+        rootMargin: "5px",
+        threshold: .05
+    }
 
-    // useEffect(()=> {
-    //     const observer = new IntersectionObserver(callbackFunction, options)
-    //     if(containerRef.current) {
-    //         observer.observe(containerRef.current)
-    //     }
+    useEffect(()=> {
+        const observer = new IntersectionObserver(callbackFunction, options)
+        if(containerRef.current) {
+            observer.observe(containerRef.current)
+        }
 
-    //     return () => {
-    //         if (containerRef.current) {
-    //             observer.unobserve(containerRef.current)
-    //         }
-    //     }
-    // }, [containerRef, options])
+        return () => {
+            if (containerRef.current) {
+                observer.unobserve(containerRef.current)
+            }
+        }
+    }, [containerRef, options])
     return (
         <div className='container'>
-            <body className=''>
+            <body className='scrollArea'>
+                {isVisible ? 
                 <div className=''>
                     {/* called attributes aka props */}
                     {portfolioArray.map((project, i) => 
@@ -105,6 +106,7 @@ function Portfolio() {
                     content={project.content}
                     gitHubRepo={project.gitHubRepo} />)}
                 </div>
+            : setIsVisible}   
             </body>
         </div>
     );

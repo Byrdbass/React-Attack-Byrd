@@ -38,7 +38,7 @@ function Cards(props) {
          
         <div className="row custom-card" >
             <div className="col s12 m5 l4 custom-card" ref={containerRef}>
-            {isVisible ?
+            {/* {isVisible ? */}
                 <a href= {props.deployedLink} target="_blank" className="">
                     <div className="card cardlink ">
                         <div className="card-image custom-card-image">
@@ -47,7 +47,7 @@ function Cards(props) {
                         </div>
                     </div>
                 </a>
-                : setIsVisible}
+                {/* : setIsVisible} */}
                 <div className="card-content">
                     <p>{props.content}</p>
                 </div>
