@@ -232,6 +232,10 @@
         /* padding: 2px 4px; */
         border: 6px inset var(--iceblue);
     }
+    .show {
+        transform: translateX(0);
+        opacity: 1;
+    }
     a:hover{
         color: var(--darkorange)
     }

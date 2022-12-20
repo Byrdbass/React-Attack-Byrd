@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Cards from '../Cards'
 // DOUBLE CHECK IF THIS IS COPIED CORRECTLY FROM WORKSPACE FOR LELAND BYRD.COM
 
@@ -66,6 +66,31 @@ function Portfolio() {
             gitHubRepo: 'https://github.com/Byrdbass/weather-dashboard'
         }
     ]
+    // const containerRef = useRef(null);
+    // const [isVisible, setIsVisible] = useState(false);
+
+    // const callbackFunction = entries => {
+    //     const [ entry ] = entries
+    //     setIsVisible(entry.isIntersecting)
+    // }
+    // const options = {
+    //     root: null,
+    //     rootMargin: "50px",
+    //     threshold: 1.0
+    // }
+
+    // useEffect(()=> {
+    //     const observer = new IntersectionObserver(callbackFunction, options)
+    //     if(containerRef.current) {
+    //         observer.observe(containerRef.current)
+    //     }
+
+    //     return () => {
+    //         if (containerRef.current) {
+    //             observer.unobserve(containerRef.current)
+    //         }
+    //     }
+    // }, [containerRef, options])
     return (
         <div className='container'>
             <body className=''>
