@@ -1,7 +1,7 @@
 import React from 'react';
 import FileSaver from 'file-saver';
 import M from 'materialize-css'
-import "../styles/style.css"
+//import "../styles/style.css"
 import { Navbar, Icon, NavItem } from 'react-materialize';
 
 
@@ -10,7 +10,7 @@ function NavigationBar({ currentPage, handlePageChange }) {
     return (
         <div>
             <div className="divider"></div>
-            <nav className="nav-extended">
+            <nav className="nav-extended customColorNav">
                 <Navbar
                     brand={<a
                         onClick={() => handlePageChange('Aboutme')}
