@@ -1,16 +1,34 @@
 import React from 'react';
 import FileSaver from 'file-saver';
 import M from 'materialize-css'
-//import { Navbar } from 'react-materialize';
+import "../styles/style.css"
+import { Navbar, Icon, NavItem } from 'react-materialize';
 
 
-function Navbar({ currentPage, handlePageChange }) {
+function NavigationBar({ currentPage, handlePageChange }) {
 
     return (
         <div>
             <div className="divider"></div>
-
             <nav className="nav-extended">
+                <Navbar
+                    brand={<a
+                        onClick={() => handlePageChange('Aboutme')}
+                        className={currentPage === 'Aboutme'} {..."customColorNav"}
+                        href="#Aboutme"
+                        
+                    >
+                        <img src="https://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
+                            className="customColorNav logo" />
+                    </a>}
+                    className={currentPage === 'Aboutme'}{..."nav-wrapper customColorNav"}
+                    
+                    sidenav={<ul>
+                        <li><a href="https://github.com/Byrdbass" target={"_blank"}>Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/leland-byrd/">LinkedIn</a></li>
+                        <li><a href="https://linktr.ee/byrdbass">Linktr.ee</a></li>
+                    </ul>}
+                ></Navbar>
                 <div className="nav-wrapper customColorNav">
                     <a
                         href="#Aboutme" onClick={() => handlePageChange('Aboutme')} className={currentPage === 'Aboutme'}
@@ -20,7 +38,7 @@ function Navbar({ currentPage, handlePageChange }) {
                     </a>
                     {/* the href here to the side-nav trigger is not pulling up menu */}
                     <a
-                        href="#" 
+                        href="#"
                         data-target="mobile-demo" className="sidenav-trigger customColorNav"
                     >
                         <i className="material-icons customColorNav">menu</i>
@@ -61,4 +79,4 @@ function Navbar({ currentPage, handlePageChange }) {
     );
 }
 
-export default Navbar;
+export default NavigationBar;

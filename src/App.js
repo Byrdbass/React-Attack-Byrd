@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar";
+import NavigationBar from "./components/NavigationBar";
 import Banner from "./components/Banner";
 import Aboutme from "./components/pages/Aboutme";
 import Portfolio from "./components/pages/Portfolio";
@@ -36,7 +36,7 @@ function App() {
     return (
         <div>
             <Banner />
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+            <NavigationBar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer />
 
