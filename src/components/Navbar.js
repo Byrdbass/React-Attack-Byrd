@@ -1,6 +1,7 @@
 import React from 'react';
 import FileSaver from 'file-saver';
 import M from 'materialize-css'
+//import { Navbar } from 'react-materialize';
 
 
 function Navbar({ currentPage, handlePageChange }) {
@@ -14,13 +15,13 @@ function Navbar({ currentPage, handlePageChange }) {
                     <a
                         href="#Aboutme" onClick={() => handlePageChange('Aboutme')} className={currentPage === 'Aboutme'}
                     >
-                        {/*CHANGE TO HTTPS WHEN SSL CERT IS THERE! */}
-                        <img src="http://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
+                        <img src="https://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
                             className="customColorNav logo" />
                     </a>
+                    {/* the href here to the side-nav trigger is not pulling up menu */}
                     <a
-                        // HAMBURGER ICON NOT WORKING IN MOBILE VIEW!!
-                        href="#" data-target="mobile-demo" className="sidenav-trigger customColorNav"
+                        href="#" 
+                        data-target="mobile-demo" className="sidenav-trigger customColorNav"
                     >
                         <i className="material-icons customColorNav">menu</i>
                     </a>
@@ -48,15 +49,10 @@ function Navbar({ currentPage, handlePageChange }) {
                                 className={currentPage === 'ContactForm'}>Contact
                             </a>
                         </li>
-                        <li className="tab customColorNav"><a href="./assets/Poke-Weather/index.html" target="_blank">PokeWeather</a></li>
-                        {/* <!-- <li className="tab"><a className="active" href="#test2">Repair Revolution</a></li> --> */}
-                        <li className="tab customColorNav"><a href="https://byrdbass.github.io/passwordGenerator/" target="_blank">Password
-                            Generator</a></li>
                     </ul>
                 </div>
             </nav>
-
-            <ul className="sidenav" id="mobile-demo">
+            <ul className="sidenav" id="mobile-demo" href="#">
                 <li><a href="https://github.com/Byrdbass">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/leland-byrd/">LinkedIn</a></li>
                 <li><a href="https://linktr.ee/byrdbass">Linktr.ee</a></li>
