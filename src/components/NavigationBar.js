@@ -6,7 +6,7 @@ import { Navbar, Icon, NavItem } from 'react-materialize';
 
 
 function NavigationBar({ currentPage, handlePageChange }) {
-
+let lawnGrey = "#7C8A94"
     return (
         <div>
             <div className="divider"></div>
@@ -15,21 +15,22 @@ function NavigationBar({ currentPage, handlePageChange }) {
                     brand={<a
                         onClick={() => handlePageChange('Aboutme')}
                         className={currentPage === 'Aboutme'} {..."customColorNav"}
+                        style={{backgroundColor: lawnGrey}}
                         href="#Aboutme"
-                        
                     >
                         <img src="https://lelandbyrd.com/images/Artboard-1-copy-17color-36.png"
                             className="customColorNav logo" />
-                    </a>}
-                    className={currentPage === 'Aboutme'}{..."nav-wrapper customColorNav"}
-                    
+                    </a>
+                    }
+                    className={currentPage === 'Aboutme'}
+                    style={{backgroundColor: lawnGrey}}
                     sidenav={<ul>
                         <li><a href="https://github.com/Byrdbass" target={"_blank"}>Github</a></li>
                         <li><a href="https://www.linkedin.com/in/leland-byrd/">LinkedIn</a></li>
                         <li><a href="https://linktr.ee/byrdbass">Linktr.ee</a></li>
                     </ul>}
                 ></Navbar>
-                <div className="nav-wrapper customColorNav">
+                <div className="customColorNav">
                     <a
                         href="#Aboutme" onClick={() => handlePageChange('Aboutme')} className={currentPage === 'Aboutme'}
                     >
