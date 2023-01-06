@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/pages/ContactForm";
 
 function App() {
+    const beauBlue = "#BCD1E0"
     const [currentPage, setCurrentPage] = useState('Aboutme')
     //constant for the states of the about me section using useState() method
     //constant for the projectsCards/portfolio section to appear()
@@ -34,7 +35,7 @@ function App() {
     const handlePageChange = (page) => setCurrentPage(page)
 
     return (
-        <div>
+        <div style={{backgroundColor: beauBlue}}>
             <Banner />
             <NavigationBar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
