@@ -40,10 +40,6 @@ function App() {
             <NavigationBar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer />
-
-
-
-
         </div>
     )
 }

@@ -12,7 +12,6 @@ import ContactForm from './pages/ContactForm';
 
 function NavigationBar({ currentPage, handlePageChange }) {
     const lawnGrey = "#7C8A94"
-    const right = 'right'
     return (
         <div>
             <div className="divider"></div>
@@ -85,7 +84,7 @@ function NavigationBar({ currentPage, handlePageChange }) {
                         <li><a href="https://linktr.ee/byrdbass" target={"_blank"}>Linktr.ee</a></li>
                     </ul>}
                 >
-                    <NavItem style={{ float: right }} href="https://github.com/Byrdbass" target={"_blank"}> Github </NavItem>
+                    <NavItem href="https://github.com/Byrdbass" target={"_blank"}> Github </NavItem>
                     <NavItem href="https://www.linkedin.com/in/leland-byrd/" target={"_blank"}>LinkedIn</NavItem>
                     <NavItem href="https://linktr.ee/byrdbass" target={"_blank"}>Linktr.ee</NavItem>
                 </Navbar>
