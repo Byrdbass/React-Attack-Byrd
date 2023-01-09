@@ -53,7 +53,7 @@ function Footer() {
                 </div>
                 <div className="footer-copyright customColorFooter">
                     <div className="container customColorFooter">
-                        © 2022
+                        © 2023
                         <a className="grey-text text-lighten-4 right" href="#!"></a>
                     </div>
                 </div>
