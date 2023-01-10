@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from "./components/NavigationBar";
 import Banner from "./components/Banner";
 import Aboutme from "./components/pages/Aboutme";
@@ -35,12 +36,18 @@ function App() {
     const handlePageChange = (page) => setCurrentPage(page)
 
     return (
+
         <div style={{backgroundColor: beauBlue}}>
             <Banner />
+
+
+            
             <NavigationBar currentPage={currentPage} handlePageChange={handlePageChange} />
+
             {renderPage()}
             <Footer />
         </div>
+
     )
 }
 
