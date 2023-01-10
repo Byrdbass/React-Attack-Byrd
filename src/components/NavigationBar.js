@@ -6,7 +6,7 @@ import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
 import ContactFor from './pages/ContactForm';
 import Aboutme from './pages/Aboutme';
-//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navbar, NavItem, Tabs, Tab } from 'react-materialize';
 import ContactForm from './pages/ContactForm';
 
@@ -16,7 +16,9 @@ function NavigationBar({ currentPage, handlePageChange }) {
     return (
        
                 <div>
-                
+                     {/* <Router>
+            <Routes>
+                <Route path="/" element = {<Aboutme/>}></Route> */}
                     <div className="divider"></div>
                     <nav className="nav-extended customColorNav">
                         <Navbar
@@ -92,6 +94,8 @@ function NavigationBar({ currentPage, handlePageChange }) {
                             <NavItem href="https://linktr.ee/byrdbass" target={"_blank"}>Linktr.ee</NavItem>
                         </Navbar>
                     </nav>
+                    {/* </Routes>
+                    </Router> */}
                 </div>
             
         
