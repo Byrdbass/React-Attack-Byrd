@@ -42,7 +42,9 @@ function App() {
 
 
             
-            <NavigationBar currentPage={currentPage} handlePageChange={handlePageChange} />
+            <NavigationBar 
+            currentPage={currentPage} handlePageChange={handlePageChange} 
+            />
 
             {renderPage()}
             <Footer />
