@@ -14,39 +14,17 @@ import ContactForm from "./components/pages/ContactForm";
 
 function App() {
     const beauBlue = "#BCD1E0"
-    const [currentPage, setCurrentPage] = useState('Aboutme')
     //constant for the states of the about me section using useState() method
     //constant for the projectsCards/portfolio section to appear()
     //resume
-    const renderPage = () => {
-        if (currentPage === 'Aboutme') {
-            return <Aboutme />;
-        }
-        if (currentPage === 'Portfolio') {
-            return <Portfolio />
-        }
-        if (currentPage === 'Resume') {
-            return <Resume />
-        } 
-        if (currentPage === 'ContactForm') {
-            return <ContactForm />
-        }
-    }
-
-    const handlePageChange = (page) => setCurrentPage(page)
 
     return (
 
         <div style={{backgroundColor: beauBlue}}>
             <Banner />
 
+            <NavigationBar />
 
-            
-            <NavigationBar 
-            currentPage={currentPage} handlePageChange={handlePageChange} 
-            />
-
-            {renderPage()}
             <Footer />
         </div>
 
