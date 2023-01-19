@@ -33,10 +33,7 @@ function NavigationBar() {
                     </a>
                     }
 
-
-
                     extendWith={<Tabs className="tabs-transparent" scope="tabs-13">
-
                         <Tab className="white-text"
                             options={{
                                 duration: 300,
