@@ -143,17 +143,17 @@ function NavigationBar() {
                         }}
                         trigger={<a>Projects<Icon right>arrow_drop_down_circle</Icon></a>}
                     >
-                        <a><Icon>apps</Icon> Full stack</a>
-                        <a href="#">Java</a>
-                        <a href="#">Node</a>
-                        <a>Python</a>
-                        <a><Icon>art_track</Icon>FrontEnd</a>
-                        <a href="#">
-                            <Icon>
-                                view_module
-                            </Icon>
-                            four
-                        </a>
+                        <a style={{marginLeft: '6px'}}><Icon>remove_red_eye</Icon>Featured</a>
+                        <Divider/>
+                        <a style={{marginLeft: '6px'}}><Icon>storage</Icon>Fullstack</a>
+                        <Divider/>
+                        <a href="#" style={{marginLeft: '6px'}}>Java</a>
+                        <Divider/>
+                        <a href="#" style={{marginLeft: '6px'}}><Icon>gradient</Icon>Node</a>
+                        <Divider/>
+                        <a style={{marginLeft: '6px'}}><Icon><img src="https://lelandbyrd.com/images/icons8-python-24.png" /></Icon>Python</a>
+                        <Divider/>
+                        <a style={{marginLeft: '6px'}}><Icon>texture</Icon>FrontEnd</a>
                         {/* Keeping this as an example */}
                         {/* <a href="#">
                                     <Icon>
