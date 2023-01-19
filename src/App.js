@@ -17,13 +17,26 @@ function App() {
     //constant for the states of the about me section using useState() method
     //constant for the projectsCards/portfolio section to appear()
     //resume
+    const [currentPage, setCurrentPage] = useState(false);
+
+    const renderPage =() => {
+        if (currentPage === 'aboutme') {
+            return <Aboutme/>
+        }
+        if (currentPage === 'portfolio') {
+            return <Portfolio/>
+        }
+    }
+
+    const handlePageChange = (page) => setCurrentPage(page);
 
     return (
 
         <div style={{backgroundColor: beauBlue}}>
             <Banner />
 
-            <NavigationBar />
+            <NavigationBar currentPage={currentPage} handlePageChange={handlePageChange}/>
+            {renderPage()}
 
             <Footer />
         </div>

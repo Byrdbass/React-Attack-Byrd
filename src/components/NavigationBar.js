@@ -6,13 +6,14 @@ import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
 import ContactFor from './pages/ContactForm';
 import Aboutme from './pages/Aboutme';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import { Navbar, NavItem, Tabs, Tab, Dropdown, Icon, Divider, Button, Col, Row } from 'react-materialize';
 import ContactForm from './pages/ContactForm';
 
 
-function NavigationBar() {
+function NavigationBar({ currentPage, handlePageChange}) {
     const lawnGrey = "#7C8A94"
+ 
 
     return (
 
@@ -143,17 +144,19 @@ function NavigationBar() {
                         }}
                         trigger={<a>Projects<Icon right>arrow_drop_down_circle</Icon></a>}
                     >
-                        <a style={{marginLeft: '6px'}}><Icon>remove_red_eye</Icon>Featured</a>
+                        <a style={{padding: '14px 20px'}} 
+                        onClick={() => handlePageChange('portfolio')}
+                        className={currentPage === 'portfolio'}><Icon>remove_red_eye</Icon>Featured</a>
                         <Divider/>
-                        <a style={{marginLeft: '6px'}}><Icon>storage</Icon>Fullstack</a>
+                        <a style={{padding: '14px 20px'}}><Icon>storage</Icon>Fullstack</a>
                         <Divider/>
-                        <a href="#" style={{marginLeft: '6px'}}>Java</a>
+                        <a href="#" style={{padding: '14px 25px 14px 22px'}}><Icon ><img src="https://lelandbyrd.com/images/icons8-java-24.png"/></Icon>Java</a>
                         <Divider/>
-                        <a href="#" style={{marginLeft: '6px'}}><Icon>gradient</Icon>Node</a>
+                        <a href="#" style={{padding: '14px 20px'}}><Icon ><img src="https://lelandbyrd.com/images/icons8-node-js-24.png"/></Icon>Node</a>
                         <Divider/>
-                        <a style={{marginLeft: '6px'}}><Icon><img src="https://lelandbyrd.com/images/icons8-python-24.png" /></Icon>Python</a>
+                        <a style={{padding: '14px 20px'}}><Icon><img src="https://lelandbyrd.com/images/icons8-python-24.png" /></Icon>Python</a>
                         <Divider/>
-                        <a style={{marginLeft: '6px'}}><Icon>texture</Icon>FrontEnd</a>
+                        <a style={{padding: '14px 20px'}}><Icon>texture</Icon>FrontEnd</a>
                         {/* Keeping this as an example */}
                         {/* <a href="#">
                                     <Icon>
