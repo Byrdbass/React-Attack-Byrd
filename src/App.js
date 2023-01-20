@@ -26,6 +26,9 @@ function App() {
         if (currentPage === 'portfolio') {
             return <Portfolio/>
         }
+        if (currentPage === 'contactform') {
+            return <ContactForm/>
+        }
     }
 
     const handlePageChange = (page) => setCurrentPage(page);

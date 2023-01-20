@@ -13,8 +13,7 @@ import ContactForm from './pages/ContactForm';
 
 function NavigationBar({ currentPage, handlePageChange}) {
     const lawnGrey = "#7C8A94"
- 
-
+    //add use state here to test change in tab page changes
     return (
 
         <div>
@@ -107,6 +106,8 @@ function NavigationBar({ currentPage, handlePageChange}) {
                             <Resume />
                         </Tab> */}
                         <Tab className="white-text"
+                        // {...addEventListener("click", handlePageChange('contactform')}
+                        // onClick={()=>handlePageChange('contactform')}
                             options={{
                                 duration: 300,
                                 onShow: null,
@@ -114,9 +115,9 @@ function NavigationBar({ currentPage, handlePageChange}) {
                                 swipeable: false
                             }}
                             title="Contact Form">
-                            <ContactForm />
+                                <ContactForm/>
                         </Tab>
-
+                        
                     </Tabs>}
 
                     sidenav={<ul>

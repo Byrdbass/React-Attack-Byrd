@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Cards from '../Cards'
 // DOUBLE CHECK IF THIS IS COPIED CORRECTLY FROM WORKSPACE FOR LELAND BYRD.COM
 
@@ -15,6 +15,16 @@ function Portfolio() {
             title: "Poke Weather",
             content: "A weather API with pokemon based off of weather conditions",
             gitHubRepo: "https://github.com/Byrdbass/Poke-Weather"
+        },
+        // REPAIR-REVOLUTION
+        //DEPLOYED LINK IS BROKEN - FIX THIS!
+        {
+            deployedLink: "https://repairrevolution.herokuapp.com/",
+            cardImage: "https://lelandbyrd.com/images/Repair%20Revolution.gif",
+            cardAltText: "screenshot of Repair-Revolution app",
+            title: "Repair Revolution",
+            content: "A blog to advocate for the Right to repair!  Reuse and Recycle!",
+            gitHubRepo: "https://github.com/mrlane51/RepairRevolution"
         },
         //BLOG BONANZA
         {
@@ -64,13 +74,22 @@ function Portfolio() {
             title: 'Weather Dashboard',
             content: 'A 5 day weather forecast based off location',
             gitHubRepo: 'https://github.com/Byrdbass/weather-dashboard'
+        },
+        //password Generator
+        {
+            deployedLink: 'https://byrdbass.github.io/passwordGenerator/',
+            cardImage: 'https://lelandbyrd.com/images/Password_gen_screenshot.png',
+            cardAltText: 'screenshot of password Generator app',
+            title: 'Password Generator',
+            content: 'An app to generate a password with alert boxes.',
+            gitHubRepo: 'https://github.com/Byrdbass/passwordGenerator'
         }
     ]
     const containerRef = useRef(null);
     const [isVisible, setIsVisible] = useState(true);
 
     const callbackFunction = entries => {
-        const [ entry ] = entries
+        const [entry] = entries
         setIsVisible(entry.isIntersecting)
     }
     const options = {
@@ -79,9 +98,9 @@ function Portfolio() {
         threshold: .05
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         const observer = new IntersectionObserver(callbackFunction, options)
-        if(containerRef.current) {
+        if (containerRef.current) {
             observer.observe(containerRef.current)
         }
 
@@ -94,19 +113,19 @@ function Portfolio() {
     return (
         <div className='container'>
             <body className='scrollArea'>
-                {isVisible ? 
-                <div className=''>
-                    {/* called attributes aka props */}
-                    {portfolioArray.map((project, i) => 
-                    <Cards className=""key={i}
-                    deployedLink={project.deployedLink} 
-                    cardImage={project.cardImage}
-                    cardAltText={project.cardAltText}
-                    title={project.title}
-                    content={project.content}
-                    gitHubRepo={project.gitHubRepo} />)}
-                </div>
-            : setIsVisible}   
+                {isVisible ?
+                    <div className=''>
+                        {/* called attributes aka props */}
+                        {portfolioArray.map((project, i) =>
+                            <Cards className="" key={i}
+                                deployedLink={project.deployedLink}
+                                cardImage={project.cardImage}
+                                cardAltText={project.cardAltText}
+                                title={project.title}
+                                content={project.content}
+                                gitHubRepo={project.gitHubRepo} />)}
+                    </div>
+                    : setIsVisible}
             </body>
         </div>
     );
