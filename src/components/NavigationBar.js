@@ -44,6 +44,9 @@ function NavigationBar({ currentPage, handlePageChange}) {
                             title="About Me">
                             <Aboutme />
                         </Tab>
+                        <Tab>
+                        <Portfolio />
+                        </Tab>
                         <Tab className="white-text"
                             options={{
                                 duration: 300,
