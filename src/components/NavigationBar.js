@@ -44,7 +44,7 @@ function NavigationBar({ currentPage, handlePageChange}) {
                             title="About Me">
                             <Aboutme />
                         </Tab>
-                        <Tab>
+                        <Tab title='Portfolio'>
                         <Portfolio />
                         </Tab>
                         <Tab className="white-text"
@@ -54,7 +54,7 @@ function NavigationBar({ currentPage, handlePageChange}) {
                                 responsiveThreshold: Infinity,
                                 swipeable: false
                             }}
-                            title="Portfolio">
+                            title="Portfolio DropDown">
                             <Dropdown
                                 id="Dropdown_8"
                                 options={{
@@ -150,7 +150,9 @@ function NavigationBar({ currentPage, handlePageChange}) {
                     >
                         <a style={{padding: '14px 20px'}} 
                         onClick={() => handlePageChange('portfolio')}
-                        className={currentPage === 'portfolio'}><Icon>remove_red_eye</Icon>Featured</a>
+                        className={currentPage === 'portfolio'}
+                        >
+                            <Icon>remove_red_eye</Icon>Featured</a>
                         <Divider/>
                         <a style={{padding: '14px 20px'}}><Icon>storage</Icon>Fullstack</a>
                         <Divider/>
@@ -160,7 +162,10 @@ function NavigationBar({ currentPage, handlePageChange}) {
                         <Divider/>
                         <a style={{padding: '14px 20px'}}><Icon><img src="https://lelandbyrd.com/images/icons8-python-24.png" /></Icon>Python</a>
                         <Divider/>
-                        <a style={{padding: '14px 20px'}}><Icon>texture</Icon>FrontEnd</a>
+                        <a style={{padding: '14px 20px'}}
+                        onClick={() => handlePageChange('frontEndProjects')}
+                        className={currentPage === 'frontEndProjects'}
+                        ><Icon>texture</Icon>FrontEnd</a>
                         {/* Keeping this as an example */}
                         {/* <a href="#">
                                     <Icon>

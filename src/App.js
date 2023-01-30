@@ -4,6 +4,7 @@ import NavigationBar from "./components/NavigationBar";
 import Banner from "./components/Banner";
 import Aboutme from "./components/pages/Aboutme";
 import Portfolio from "./components/pages/Portfolio";
+import FrontEndProjects from "./components/portfolio/frontEnd/FrontEndProjects";
 import Resume from "./components/pages/Resume";
 //import './styles/materialize.css';
 import './styles/style.css';
@@ -28,6 +29,9 @@ function App() {
         }
         if (currentPage === 'contactform') {
             return <ContactForm/>
+        }
+        if (currentPage === 'frontEndProjects') {
+            return <FrontEndProjects/>
         }
     }
 
