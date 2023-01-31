@@ -1,6 +1,7 @@
 import React from "react";
 import FrontEndCards from "./FrontEndCards";
 import { Carousel } from "react-materialize";
+import "./FEstyle.css"
 
 function FrontEndProjects() {
     const frontEndArray = [
@@ -44,38 +45,38 @@ function FrontEndProjects() {
         }
     ]
 
+    const carouselStyle = {
+        fullWidth: "490px",
+        perspective: "0px"
+    }
+
     return (
         <>
             <Carousel
+
                 carouselId="Carousel-FrontEnd"
-                className="white-text center"
+                className="white-text center carouselStyle"
                 options={{
                     fullWidth: false,
-                    indicators: true
+                    indicators: false
                 }}
+
             >
                 {frontEndArray.map((project, i) =>
-                    <div key={i}>
-                        <div className="row custom-card" >
-                            <div className="col s12 m5 l4 custom-card">
-                                {/* {isVisible ? */}
-                                <a href={project.deployedLink} target="_blank" className="">
-                                    <div className="card cardlink ">
-                                        <div className="card-image custom-card-image">
-                                            <img src={project.cardImage} alt={project.cardAltText} />
-                                            <span className="card-title transparent">{project.title}</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                {/* : setIsVisible} */}
-                                <div className="card-content">
-                                    <p>{project.content}</p>
-                                </div>
-                                <div className="card-action">
-                                    <a href={project.gitHubRepo} target="_blank" className="blue-text">Link to Github Repo</a>
+                    <div key={i} className="carouselImage" >
+                        <a href={project.gitHubRepo} target="_blank" className="blue-text">
+                            {/* {isVisible ? */}
+                            <div className="card">
+                                <div className="card-image custom-card-image">
+                                    <img style={{}} src={project.cardImage} alt={project.cardAltText} />
+                                    <span className="card-title transparent">{project.title}</span>
                                 </div>
                             </div>
-                        </div>
+                            {/* : setIsVisible} */}
+                            <div className="card-content">
+                                <span style={{ whiteSpace: "nowrap", textOverflow: "" }}>{project.content}</span>
+                            </div>
+                        </a>
                     </div>
                 )}
             </Carousel>
