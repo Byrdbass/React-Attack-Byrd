@@ -1,0 +1,10 @@
+.carouselStyle {
+    height: 490px !important;
+    perspective: 1000px !important;
+}
+
+.carouselImage {
+    height: 400px !important;
+    width: auto !important;
+    background-color: inherit;
+}
