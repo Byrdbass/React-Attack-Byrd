@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
+import "../styles/cards.css"
 
 // ADD STYLING HERE AS CONST FOR .show -CHECK CLASS REFERENCES
 function Cards(props) {
@@ -36,8 +37,8 @@ function Cards(props) {
     return(
     <>
          
-        <div className="row custom-card" >
-            <div className="col s12 m5 l4 custom-card" ref={containerRef}>
+        <div className="col proj-card" >
+            <div className="" ref={containerRef}>
             {/* {isVisible ? */}
                 <a href= {props.deployedLink} target="_blank" className="">
                     <div className="card cardlink ">
