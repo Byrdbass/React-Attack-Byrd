@@ -211,26 +211,7 @@
         justify-content: center;
         text-transform: uppercase;
     }
-    .custom-card-image{
-        width: 20em;
-    }
-    .custom-card{
-        width: 20em;
-    }
-    .cardlink {
-        /* transition: flex-basis 500ms linear; */
-        /* width: 17em; */
-        /* padding: 5px 7px; */
-        border: 6px outset var(--blueLapis);
-        /* margin: 20px 100px; */
-    }
-    .cardlink:hover{
-        font-style: italic;
-        color: var(--darkblue);
-        background: var(--gradientblueorange);
-        /* padding: 2px 4px; */
-        border: 6px inset var(--iceblue);
-    }
+
     .show {
         transform: translateX(0);
         opacity: 1;

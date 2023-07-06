@@ -178,7 +178,7 @@ function Portfolio() {
     }, [containerRef, options])
     return (
         <div className='row projects'>
-            <body className='scrollArea col'>
+            <div className='scrollArea row'>
                 {isVisible ?
                     <div className=''>
                         {/* called attributes aka props */}
@@ -192,7 +192,7 @@ function Portfolio() {
                                 gitHubRepo={project.gitHubRepo} />)}
                     </div>
                     : setIsVisible}
-            </body>
+            </div>
         </div>
     );
 }

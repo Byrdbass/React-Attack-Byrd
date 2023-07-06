@@ -41,8 +41,8 @@ function Cards(props) {
             <div className="" ref={containerRef}>
             {/* {isVisible ? */}
                 <a href= {props.deployedLink} target="_blank" className="">
-                    <div className="card cardlink ">
-                        <div className="card-image custom-card-image">
+                    <div className="card cardlink">
+                        <div className="card-image">
                             <img src={props.cardImage} alt={props.cardAltText} />
                             <span className="card-title transparent">{props.title}</span>
                         </div>
