@@ -34,7 +34,7 @@ function NavigationBar({ currentPage, handlePageChange}) {
                     }
 
                     extendWith={<Tabs className="tabs-transparent" scope="tabs-13">
-                        <Tab className="white-text"
+                        {/* <Tab className="white-text"
                             options={{
                                 duration: 300,
                                 onShow: null,
@@ -43,11 +43,11 @@ function NavigationBar({ currentPage, handlePageChange}) {
                             }}
                             title="About Me">
                             <Aboutme />
-                        </Tab>
+                        </Tab> */}
                         <Tab title='Portfolio'>
                         <Portfolio />
                         </Tab>
-                        <Tab className="white-text"
+                        {/* <Tab className="white-text"
                             options={{
                                 duration: 300,
                                 onShow: null,
@@ -95,7 +95,7 @@ function NavigationBar({ currentPage, handlePageChange}) {
                                     {' '}five
                                 </a>
                             </Dropdown>
-                        </Tab>
+                        </Tab> */}
 
                         {/* 
                         <Tab active className="white-text"

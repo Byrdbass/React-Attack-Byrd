@@ -18,12 +18,12 @@ function App() {
     //constant for the states of the about me section using useState() method
     //constant for the projectsCards/portfolio section to appear()
     //resume
-    const [currentPage, setCurrentPage] = useState(false);
+    const [currentPage, setCurrentPage] = useState('portfolio');
 
     const renderPage =() => {
-        if (currentPage === 'aboutme') {
-            return <Aboutme/>
-        }
+        // if (currentPage === 'aboutme') {
+        //     return <Aboutme/>
+        // }
         if (currentPage === 'portfolio') {
             return <Portfolio/>
         }
