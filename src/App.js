@@ -43,7 +43,7 @@ function App() {
             <Banner />
 
             <NavigationBar currentPage={currentPage} handlePageChange={handlePageChange}/>
-            {renderPage()}
+            {/* {renderPage()} */}
 
             <Footer />
         </div>
