@@ -45,97 +45,12 @@ function NavigationBar({ currentPage, handlePageChange }) {
           }
           extendWith={
             <Tabs className="tabs-transparent" scope="tabs-13">
-              {/* <Tab className="white-text"
-                            options={{
-                                duration: 300,
-                                onShow: null,
-                                responsiveThreshold: Infinity,
-                                swipeable: false
-                            }}
-                            title="About Me">
-                            <Aboutme />
-                        </Tab> */}
               <Tab title="Portfolio">
                 <Portfolio />
               </Tab>
               <Tab title="Resume">
                 <Resume />
               </Tab>
-              {/* <Tab className="white-text"
-                            options={{
-                                duration: 300,
-                                onShow: null,
-                                responsiveThreshold: Infinity,
-                                swipeable: false
-                            }}
-                            title="Portfolio DropDown">
-                            <Dropdown
-                                id="Dropdown_8"
-                                options={{
-                                    alignment: 'center',
-                                    autoTrigger: true,
-                                    closeOnClick: true,
-                                    constrainWidth: true,
-                                    container: null,
-                                    coverTrigger: true,
-                                    hover: false,
-                                    inDuration: 150,
-                                    onCloseEnd: null,
-                                    onCloseStart: null,
-                                    onOpenEnd: null,
-                                    onOpenStart: null,
-                                    outDuration: 250
-                                }}
-                                trigger={<Button node="button">Full Stack Projects</Button>}
-                            >
-                                <Portfolio />
-                                <a href="#">
-                                    two
-                                </a>
-                                <Divider />
-                                <a href="#">
-                                    three
-                                </a>
-                                <a href="#">
-                                    <Icon>
-                                        view_module
-                                    </Icon>
-                                    four
-                                </a>
-                                <a href="#">
-                                    <Icon>
-                                        cloud
-                                    </Icon>
-                                    {' '}five
-                                </a>
-                            </Dropdown>
-                        </Tab> */}
-
-              {/* 
-                        <Tab active className="white-text"
-                            options={{
-                                duration: 300,
-                                onShow: null,
-                                responsiveThreshold: Infinity,
-                                swipeable: false
-                            }}
-                            title="Resume">
-                            <Resume />
-                        </Tab> */}
-              {/* <Tab
-                className="white-text"
-                // {...addEventListener("click", handlePageChange('contactform')}
-                // onClick={()=>handlePageChange('contactform')}
-                options={{
-                  duration: 300,
-                  onShow: null,
-                  responsiveThreshold: Infinity,
-                  swipeable: false,
-                }}
-                title="Contact Form"
-              >
-                <ContactForm />
-              </Tab> */}
             </Tabs>
           }
           sidenav={
@@ -161,78 +76,6 @@ function NavigationBar({ currentPage, handlePageChange }) {
             </ul>
           }
         >
-          {/* <Dropdown
-            id="Dropdown_8"
-            options={{
-              alignment: "center",
-              autoTrigger: true,
-              closeOnClick: true,
-              constrainWidth: true,
-              container: null,
-              coverTrigger: true,
-              hover: true,
-              inDuration: 150,
-              onCloseEnd: null,
-              onCloseStart: null,
-              onOpenEnd: null,
-              onOpenStart: 250,
-              outDuration: 250,
-            }}
-            trigger={
-              <a>
-                Projects<Icon right>arrow_drop_down_circle</Icon>
-              </a>
-            }
-          >
-            <a
-              style={{ padding: "14px 20px" }}
-              onClick={() => handlePageChange("portfolio")}
-              className={currentPage === "portfolio"}
-            >
-              <Icon>remove_red_eye</Icon>Featured
-            </a>
-            <Divider />
-            <a style={{ padding: "14px 20px" }}>
-              <Icon>storage</Icon>Fullstack
-            </a>
-            <Divider />
-            <a href="#" style={{ padding: "14px 25px 14px 22px" }}>
-              <Icon>
-                <img src="https://lelandbyrd.com/images/icons8-java-24.png" />
-              </Icon>
-              Java
-            </a>
-            <Divider />
-            <a href="#" style={{ padding: "14px 20px" }}>
-              <Icon>
-                <img src="https://lelandbyrd.com/images/icons8-node-js-24.png" />
-              </Icon>
-              Node
-            </a>
-            <Divider />
-            <a style={{ padding: "14px 20px" }}>
-              <Icon>
-                <img src="https://lelandbyrd.com/images/icons8-python-24.png" />
-              </Icon>
-              Python
-            </a>
-            <Divider />
-            <a
-              style={{ padding: "14px 20px" }}
-              onClick={() => handlePageChange("frontEndProjects")}
-              className={currentPage === "frontEndProjects"}
-            >
-              <Icon>texture</Icon>FrontEnd
-            </a> */}
-            {/* Keeping this as an example */}
-            {/* <a href="#">
-                                    <Icon>
-                                        cloud
-                                    </Icon>
-                                    {<Portfolio/> }five
-                                </a> */}
-          {/* </Dropdown> */}
-
           <NavItem href="https://github.com/Byrdbass" target={"_blank"}>
             {" "}
             Github{" "}

@@ -13,3 +13,21 @@
     border: 9px inset red;
     padding: 3px 17px;
 }
+
+@media screen and (max-width: 992px) {
+    .center-list{
+        font-size: 5vw;
+    }
+    .center-list{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resumeBtn{
+        font-size: 7vw;
+    }
+    .center-list{
+        font-size: 5vw;
+    }
+}
