@@ -1,0 +1,33 @@
+.proj-card{
+    width: 33%;
+    height: 500px;
+}
+.custom-card-image{
+    width: 20em;
+}
+.custom-card{
+    width: 20em;
+}
+.cardlink {
+    border: 6px outset var(--blueLapis);
+    margin: 0px 9px; 
+}
+.cardlink:hover{
+    font-style: italic;
+    color: var(--darkblue);
+    background: var(--gradientblueorange);
+    border: 6px inset var(--iceblue);
+}
+
+@media screen and (max-width: 992px) {
+    .proj-card{
+        width: 50%;
+        height: 490px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .proj-card{
+        width: 100%;
+        height: 690px;
+    }
+}

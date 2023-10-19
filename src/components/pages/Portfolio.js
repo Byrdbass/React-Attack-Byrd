@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Cards from '../Cards'
+import "../../styles/portfolio.css"
 // DOUBLE CHECK IF THIS IS COPIED CORRECTLY FROM WORKSPACE FOR LELAND BYRD.COM
 
 /* TODO:
@@ -176,8 +177,8 @@ function Portfolio() {
         }
     }, [containerRef, options])
     return (
-        <div className='container'>
-            <body className='scrollArea'>
+        <div className='row projects'>
+            <div className='scrollArea row'>
                 {isVisible ?
                     <div className=''>
                         {/* called attributes aka props */}
@@ -191,7 +192,7 @@ function Portfolio() {
                                 gitHubRepo={project.gitHubRepo} />)}
                     </div>
                     : setIsVisible}
-            </body>
+            </div>
         </div>
     );
 }

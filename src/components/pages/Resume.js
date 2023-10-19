@@ -1,30 +1,76 @@
-import React from 'react';
-import FileSaver from 'file-saver';
+import React from "react";
+import FileSaver from "file-saver";
+import ResumeFile from "../../media/Resume.pdf";
+import "../../styles/resume.css"
 
-function Resume () {
-    const saveResume = () => {
-        FileSaver.saveAs("../../LelandByrdResume030422.pdf", "leland-byrd-resume.pdf");
-    };
-    return (
-        <>
-        <h1>Resume</h1>
-        <a className="resumeBtn" onClick={saveResume} target="_blank">Download resume here</a>
-        <h2>Technologies known</h2>
-        <ul>
-            <li>Javascript</li>
-            <li>MERN</li>
+function Resume() {
+  const saveResume = () => {
+    FileSaver.saveAs(ResumeFile, "leland-byrd-resume.pdf");
+  };
 
-        </ul>
-        <h3>Frameworks</h3>
-        <ul>
-        <li>React</li>
-            <li>Redux</li>
-            <li>Materialize</li>
-        </ul>
+  const langKnownArr = [
+    "Java",
+    "Git",
+    "JavaScript",
+    "UNIX",
+    "python",
+    "jQuery",
+    "CSS",
+    "HTML",
+    "MySQL",
+    "noSQL",
+  ];
 
-        </>
+  const frameWorksArr = [
+    "React", 
+    "Jira", 
+    "Spring", 
+    "AppDynamics", 
+    "SpringBoot", 
+    "Linux", 
+    "CLI", 
+    "MERN stack", 
+    "Node", 
+    "handlebars", 
+    "Splunk", 
+    "Hibernate", 
+    "Materialize", 
+    "REST APIs", 
+    "Express", 
+    "Mongoose", 
+    "MongoDB", 
+    "GraphQL", 
+    "Ableton Live", 
+    "Audio Engineering"
+  ]
 
-    );
+  return (
+    <>
+      <h1 className="center">
+        <a className="resumeBtn" onClick={saveResume} target="_blank">
+          Download resume here
+        </a>
+      </h1>
+      <h3>Languages Known</h3>
+        {langKnownArr.map((val) => {
+          return (
+            <div>
+              <p className="center-list">{val}</p>
+              {/* <p>&nbsp;</p> */}
+            </div>
+          );
+        })}
+      <h3>Frameworks</h3>
+      {frameWorksArr.map((val) => {
+          return (
+            <div>
+              <p className="center-list">{val}</p>
+              {/* <p>&nbsp;</p> */}
+            </div>
+          );
+        })}
+    </>
+  );
 }
 
 export default Resume;

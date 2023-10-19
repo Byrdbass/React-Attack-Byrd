@@ -1,0 +1,33 @@
+.center-list{
+    text-align: center;
+    font-size: 1.64rem;
+}
+
+.resumeBtn{
+    background-color: var(--darkorange);
+    border: 9px outset var(--darkorange);
+    padding: 1px 15px;
+}
+.resumeBtn:hover{    
+    background-color: var(--bleulapis);
+    border: 9px inset red;
+    padding: 3px 17px;
+}
+
+@media screen and (max-width: 992px) {
+    .center-list{
+        font-size: 5vw;
+    }
+    .center-list{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resumeBtn{
+        font-size: 7vw;
+    }
+    .center-list{
+        font-size: 5vw;
+    }
+}
