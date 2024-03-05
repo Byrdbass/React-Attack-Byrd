@@ -12,6 +12,7 @@
     background-color: var(--bleulapis);
     border: 9px inset red;
     padding: 3px 17px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {

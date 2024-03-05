@@ -3,11 +3,16 @@ import Cards from '../Cards'
 import "../../styles/portfolio.css"
 // DOUBLE CHECK IF THIS IS COPIED CORRECTLY FROM WORKSPACE FOR LELAND BYRD.COM
 
-/* TODO:
-ADD A SSL certificate and change all links with LelandByrd.com to https: from http:*/
-
 function Portfolio() {
     const portfolioArray = [
+        //MultiTracks
+        {
+            deployedLink: "",
+            cardImage: "http://lelandbyrd.com/images/MultiTracks.com.gif",
+            cardAltText: "gif of MultiTracks Music app",
+            content: "An API created to showcase various Musician Profiles",
+            gitHubRepo: "https://github.com/Byrdbass/MultiTracks"
+        },
         //POKE-WEATHER
         {
             deployedLink: "http://lelandbyrd.com/assets/Poke-Weather/index.html",
